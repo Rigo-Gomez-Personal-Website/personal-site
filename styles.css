@@ -1,5 +1,9 @@
+*{
+    padding: 10;
+    margin: 10;
+}
 body{
-    background-image: url(jason-leung-FG5gLcEtcXs-unsplash.jpg);
+    background-image: url(photos/jason-leung-FG5gLcEtcXs-unsplash.jpg);
     background-position: center;
     background-size: 100%;
     color:rgb(0, 0, 0) ;
@@ -20,7 +24,26 @@ header{
     padding-bottom: 5px;
     padding-top: 5px;
 }
+nav{
+    height: 50px;
+}
+nav ul li{
+    list-style-type: none;
+    width: 150px;
+    float: left;
+}
 
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    line-height: 50px ;
+    display: block;
+    text-align: center;
+}
+nav ul li a:hover{
+    background-color: white;
+    color: blue;
+}
 .nav_container{
     display: flex;
     justify-content: space-around;
@@ -37,4 +60,22 @@ footer{
     position: absolute;
     bottom:0;
     width:100%
+}
+
+@media (max-width:750px ){
+    p{
+        font-size: 1rem;
+    }
+    li{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1.35rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.25rem;
+    }
 }
